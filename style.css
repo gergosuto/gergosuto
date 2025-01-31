@@ -126,16 +126,22 @@ a {
   }
 }
 
-.button {
+.btn {
   display: inline-block;
 }
-.button a {
+.btn a {
   padding: .6em 1.2em;
-  background-color: #fff;
   line-height: 1em;
   text-transform: uppercase;
   border: 1px solid #000;
 }
-.button a:hover {
-  background-color: #eee;
+.btn_white a {
+  background-color: #fff;
+}
+.btn_black a {
+  color: #fff;
+  background-color: #000;
+}
+.btn a:hover :first-child {
+  text-decoration: underline;
 }
