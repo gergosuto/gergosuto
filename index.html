@@ -4,26 +4,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gergő Sütő</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans+Symbols+2&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   </head>
   <body>
-    <div class="content">
-        <h1>Gergő Sütő</h1>
-        <p>
+    <div class="header-container">
+      <div class="header content">
+        <div class="header-logo text_s">
+          <a class="hover_under" href="https://gergosuto.com/"><b>Gergő Sütő</b></a>
+        </div>
+      </div>
+    </div>
+    <div class="spacer_m"></div>
+    <div class="content flex_content">
+      <div class="">
+        <p class="long_text serif">
             Hi there,
             <br><br>
             I am an industrial ecologist, currently pursuing my PhD at Utrecht University.
-            To learn more about my professional activities, see my profile by 
+            To learn more about my professional activities, see my profile by
             <a href="https://www.uu.nl/staff/GMSuto" target="_blank">Utrecht University</a>
             and on
             <a href="https://www.linkedin.com/in/gergosuto/" target="_blank">LinkedIn</a>.
-        </p>
-        <p>
-            Outside office hours, I'm a keen photographer. I publish my photos via my 
+            <br><br>
+            Outside office hours, I'm a keen photographer. I publish my photos via my
             <a href="https://phlog.gergosuto.com/">Phlog</a>.
         </p>
+        <div class="spacer_s"></div>
+        <div class="button text_s">
+          <a href="{{ .RelPermalink}}">Photography <span class="symbol">&#x1F86D;</span></a>
+        </div>
+        <div style="width: 1ch; display: inline-block;"></div>
+        <span class="text_s">or</span>
+        <div style="width: 1ch; display: inline-block;"></div>
+
+        <a class="text_s uppercase text_link" href="#minor_gallery">Research</a>
+        <div class="spacer_m"></div>
+      </div>
+
+      <div class="image_container">
+        <img src="profile.jpg" alt="">
+        <span class="text_xs grey-text">Wies Ruyters © 2024</span>
+      </div>
+
     </div>
+    <div class="spacer_m"></div>
   </body>
 </html>
