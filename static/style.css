@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.text-column {
+    max-width: 600px;
+    margin: 0 auto;
+}
+@media (max-width: 600px) {
+    .text-column {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+.slideshow {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    padding: 50px 25px;
+}
+.slideshow-wrapper {
+    background-color: #777777;
+}
+.slideshow img {
+    height: 500px;
+    padding-right: 15px;
+}
