@@ -22,7 +22,7 @@ body {
     padding: 50px 25px;
 }
 .slideshow-wrapper {
-    background-color: #777777;
+    background-color: #777777; /* darktable recommended */
 }
 .slideshow img {
     height: 500px;
