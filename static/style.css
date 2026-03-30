@@ -12,6 +12,13 @@ a {
     text-underline-position: under;
     text-decoration-thickness: 1pt;
 }
+
+.portrait {
+    height: 250px;
+    padding: 10px;
+    background-color: #777777;
+}
+
 .text-column {
     max-width: 600px;
     margin: 0 auto;
@@ -22,6 +29,7 @@ a {
         margin-right: 1rem;
     }
 }
+
 .slideshow {
     display: flex;
     flex-direction: row;
