@@ -8,7 +8,7 @@ body {
     font-family: sans-serif;
 }
 a {
-    color: inherit;
+    color: rgb(178, 34, 34); /* firebrick */
     text-underline-position: under;
     text-decoration-thickness: 1pt;
 }
@@ -16,7 +16,7 @@ a {
 .portrait {
     height: 250px;
     padding: 10px;
-    background-color: #777777;
+    background-color: #777777; /* darktable bg */
 }
 
 .text-column {
