@@ -15,10 +15,10 @@ a {
     max-width: 600px;
     margin: 0 auto;
 }
-@media (max-width: 600px) {
+@media (max-width: calc(600px + 2rem)) {
     .text-column {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 .slideshow {
