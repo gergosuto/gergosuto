@@ -3,21 +3,23 @@
 {{ end }}
 
 {{ define "main" }}
-<br>
-<small>
-    {{ with .NextInSection }}
-    <a href="{{ .RelPermalink }}">Previous Album</a> · 
-    {{ end }}
-    <a href="/">Home Page</a> 
-    {{ with .PrevInSection }}
-    · <a href="{{ .RelPermalink }}">Next Album</a>
-    {{ end }}
-</small>
-<h1>{{ .Title }}</h1>
-<p></p>
-<br>
-{{ end }}
-
-{{ define "slideshow" }}
-  {{ partial "slideshow" . }}
+<div class="album-content">
+    <div class="slideshow">
+        <h2>{{ .Title }}</h2>
+        {{ range .Resources.Match "images/*.jpeg" }}
+        <img src="{{ .RelPermalink }}"></img>
+        {{ end }}
+    </div>
+</div>
+<nav class="album-navigation">
+    <small>
+        {{ with .NextInSection }}
+        <a href="{{ .RelPermalink }}">Previous Album</a> · 
+        {{ end }}
+        <a href="/">Home Page</a> 
+        {{ with .PrevInSection }}
+        · <a href="{{ .RelPermalink }}">Next Album</a>
+        {{ end }}
+    </small>
+</nav>
 {{ end }}

@@ -1,3 +1,4 @@
+/* General */
 * {
     box-sizing: border-box;
 }
@@ -13,33 +14,56 @@ a {
     text-decoration-thickness: 1pt;
 }
 
+/* Home page */
+.home-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
 .portrait {
     height: 250px;
     padding: 10px;
     background-color: #777777; /* darktable bg */
 }
 
-.text-column {
-    max-width: 600px;
-    margin: 0 auto;
+/* Album pages */
+.album-content{
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
-@media (max-width: calc(600px + 2rem)) {
-    .text-column {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
+.album-navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
 }
-
 .slideshow {
     display: flex;
     flex-direction: row;
+    padding-left: 1rem;
+    padding-right: 3rem;
     overflow: scroll;
-    padding: 50px 25px;
+    scrollbar-width: none;
 }
-.slideshow-wrapper {
-    background-color: #777777; /* darktable recommended */
+.slideshow h2 {
+    min-width: 300px;
+    max-width: 300px;
+    margin-right: 25px;
 }
 .slideshow img {
-    height: 500px;
-    padding-right: 15px;
+    height: 60vh;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #777777;
+}
+
+@media (max-width: calc(600px + 2rem)) {
+    .home-content {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .slideshow h2 {
+        min-width: 200px;
+    }
 }
