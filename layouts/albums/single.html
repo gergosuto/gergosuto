@@ -4,7 +4,15 @@
 
 {{ define "main" }}
 <br>
-<small><a href="/">← Back to Home Page</a></small>
+<small>
+    {{ with .NextInSection }}
+    <a href="{{ .RelPermalink }}">Previous Album</a> · 
+    {{ end }}
+    <a href="/">Home Page</a> 
+    {{ with .PrevInSection }}
+    · <a href="{{ .RelPermalink }}">Next Album</a>
+    {{ end }}
+</small>
 <h1>{{ .Title }}</h1>
 <p></p>
 <br>
