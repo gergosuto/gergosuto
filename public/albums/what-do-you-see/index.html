@@ -11,9 +11,21 @@
     </head>
     <body>
         
+<nav class="album-navigation">
+    <small>
+        <a href="/">Home Page</a> 
+        
+        · <a href="gergosuto.com/albums/in-orbit/">Previous Album</a> 
+        
+        
+    </small>
+</nav>
 <div class="album-content">
-    <div class="slideshow">
-        <h2>What Do You See</h2>
+    <div class="slideshow" id="slideshow">
+        <div class="album-textbox">
+            <h2>What Do You See</h2>
+            <p></p>
+        </div>
         
         <img src="gergosuto.com/albums/what-do-you-see/images/1.jpeg"></img>
         
@@ -35,15 +47,28 @@
         
     </div>
 </div>
-<nav class="album-navigation">
-    <small>
-        
-        <a href="gergosuto.com/albums/in-orbit/">Previous Album</a> · 
-        
-        <a href="/">Home Page</a> 
-        
-    </small>
-</nav>
+<div class="scroll-button-container">
+    <button class="scroll-button" id="scrollLeft">&larr; Scroll Left</button>
+    <button class="scroll-button" id="scrollRight">Scroll Right &rarr;</button>
+</div>
+<script>
+    const container = document.getElementById('slideshow');
+    const scrollAmount = .5 * screen.width; 
+
+    document.getElementById('scrollLeft').addEventListener('click', () => {
+        container.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    document.getElementById('scrollRight').addEventListener('click', () => {
+        container.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+</script>
 
     </body>
 </html>

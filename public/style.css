@@ -33,22 +33,24 @@ a {
 }
 .album-navigation {
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
-    padding-bottom: 1rem;
+    padding-top: 1rem;
     padding-left: 1rem;
 }
 .slideshow {
-    display: flex;
-    flex-direction: row;
+    height: 100vh;
     padding-left: 1rem;
     padding-right: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     overflow: scroll;
     scrollbar-width: none;
 }
-.slideshow h2 {
+.album-textbox {
+    height: 60vh;
     min-width: 300px;
-    max-width: 300px;
     margin-right: 25px;
 }
 .slideshow img {
@@ -57,13 +59,22 @@ a {
     padding: 10px;
     background-color: #777777;
 }
+.scroll-button-container {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.scroll-button {
+    color: rgb(178, 34, 34);
+}
 
 @media (max-width: calc(600px + 2rem)) {
     .home-content {
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    .slideshow h2 {
+    .album-textbox {
         min-width: 200px;
     }
 }
