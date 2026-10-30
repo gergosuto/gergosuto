@@ -22,64 +22,68 @@
         
     </small>
 </nav>
-<div class="album-content">
-    <div class="slideshow" id="slideshow">
-        <div class="album-textbox">
-            <h2>In Orbit</h2>
-            <p></p>
-        </div>
-        
+<div class="slideshow" id="slideshow">
+    
+    
         <img src="gergosuto.com/albums/in-orbit/images/1.jpeg"></img>
         
+            <div class="album-textbox">
+                <h2>In Orbit</h2>
+                <p>Lorem ipsum third</p>
+            </div>
+            
+        
+    
         <img src="gergosuto.com/albums/in-orbit/images/10.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/in-orbit/images/11.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/in-orbit/images/12.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/in-orbit/images/13.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/in-orbit/images/14.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/in-orbit/images/2.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/in-orbit/images/3.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/in-orbit/images/4.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/in-orbit/images/5.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/in-orbit/images/6.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/in-orbit/images/7.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/in-orbit/images/8.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/in-orbit/images/9.jpeg"></img>
         
-    </div>
-</div>
-<div class="scroll-button-container">
-    <button class="scroll-button" id="scrollLeft">&larr; Scroll Left</button>
-    <button class="scroll-button" id="scrollRight">Scroll Right &rarr;</button>
+    
 </div>
 <script>
-    const container = document.getElementById('slideshow');
-    const scrollAmount = .5 * screen.width; 
+    const scroller = document.getElementById('slideshow');
 
-    document.getElementById('scrollLeft').addEventListener('click', () => {
-        container.scrollBy({
-            left: -scrollAmount,
-            behavior: 'smooth'
-        });
-    });
-
-    document.getElementById('scrollRight').addEventListener('click', () => {
-        container.scrollBy({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    });
+    scroller.addEventListener('wheel', (e) => {
+        
+        if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+        
+        e.preventDefault();
+        scroller.scrollLeft += e.deltaY;
+    }, { passive: false });
 </script>
 
     </body>

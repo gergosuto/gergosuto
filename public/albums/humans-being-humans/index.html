@@ -22,56 +22,56 @@
         
     </small>
 </nav>
-<div class="album-content">
-    <div class="slideshow" id="slideshow">
-        <div class="album-textbox">
-            <h2>On Humans Being Humans</h2>
-            <p></p>
-        </div>
-        
+<div class="slideshow" id="slideshow">
+    
+    
         <img src="gergosuto.com/albums/humans-being-humans/images/GS-20160312-7845.jpeg"></img>
         
+            <div class="album-textbox">
+                <h2>On Humans Being Humans</h2>
+                <p>Lorem ipsum third</p>
+            </div>
+            
+        
+    
         <img src="gergosuto.com/albums/humans-being-humans/images/GS-20170716-5035.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/humans-being-humans/images/GS-20190531-4082.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/humans-being-humans/images/GS-20211223-1853.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/humans-being-humans/images/GS-20220911-2434.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/humans-being-humans/images/GS-20220921-2829.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/humans-being-humans/images/GS-20220925-3320.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/humans-being-humans/images/GS-20230224-0249.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/humans-being-humans/images/GS-20240725-1562.jpeg"></img>
         
+    
         <img src="gergosuto.com/albums/humans-being-humans/images/GS-20240914-2594.jpeg"></img>
         
-    </div>
-</div>
-<div class="scroll-button-container">
-    <button class="scroll-button" id="scrollLeft">&larr; Scroll Left</button>
-    <button class="scroll-button" id="scrollRight">Scroll Right &rarr;</button>
+    
 </div>
 <script>
-    const container = document.getElementById('slideshow');
-    const scrollAmount = .5 * screen.width; 
+    const scroller = document.getElementById('slideshow');
 
-    document.getElementById('scrollLeft').addEventListener('click', () => {
-        container.scrollBy({
-            left: -scrollAmount,
-            behavior: 'smooth'
-        });
-    });
-
-    document.getElementById('scrollRight').addEventListener('click', () => {
-        container.scrollBy({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    });
+    scroller.addEventListener('wheel', (e) => {
+        
+        if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+        
+        e.preventDefault();
+        scroller.scrollLeft += e.deltaY;
+    }, { passive: false });
 </script>
 
     </body>

@@ -14,37 +14,28 @@
         {{ end }}
     </small>
 </nav>
-<div class="album-content">
-    <div class="slideshow" id="slideshow">
-        <div class="album-textbox">
-            <h2>{{ .Title }}</h2>
-            <p></p>
-        </div>
-        {{ range .Resources.Match "images/*.jpeg" }}
+<div class="slideshow" id="slideshow">
+    {{ $i := 0 }}
+    {{ range .Resources.Match "images/*.jpeg" }}
         <img src="{{ .RelPermalink }}"></img>
+        {{ if eq $i 0 }}
+            <div class="album-textbox">
+                <h2>{{ page.Title }}</h2>
+                <p>Lorem ipsum third</p>
+            </div>
+            {{ $i = 1 }}
         {{ end }}
-    </div>
-</div>
-<div class="scroll-button-container">
-    <button class="scroll-button" id="scrollLeft">&larr; Scroll Left</button>
-    <button class="scroll-button" id="scrollRight">Scroll Right &rarr;</button>
+    {{ end }}
 </div>
 <script>
-    const container = document.getElementById('slideshow');
-    const scrollAmount = .5 * screen.width; // Number of pixels to scroll per click
+    const scroller = document.getElementById('slideshow');
 
-    document.getElementById('scrollLeft').addEventListener('click', () => {
-        container.scrollBy({
-            left: -scrollAmount,
-            behavior: 'smooth'
-        });
-    });
-
-    document.getElementById('scrollRight').addEventListener('click', () => {
-        container.scrollBy({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    });
+    scroller.addEventListener('wheel', (e) => {
+        // Let genuine horizontal gestures (e.g. trackpad swipes) behave natively
+        if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+        
+        e.preventDefault();
+        scroller.scrollLeft += e.deltaY;
+    }, { passive: false });
 </script>
 {{ end }}

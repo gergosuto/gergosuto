@@ -26,17 +26,12 @@ a {
 }
 
 /* Album pages */
-.album-content{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
 .album-navigation {
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 1rem;
-    padding-left: 1rem;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
 }
 .slideshow {
     height: 100vh;
@@ -50,23 +45,14 @@ a {
 }
 .album-textbox {
     height: 60vh;
-    min-width: 300px;
-    margin-right: 25px;
+    min-width: 500px;
+    margin: 0 50px;
 }
 .slideshow img {
     height: 60vh;
-    margin-right: 15px;
-    padding: 10px;
+    margin: 0 .7rem;
+    padding: .7rem;
     background-color: #777777;
-}
-.scroll-button-container {
-    position: fixed;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.scroll-button {
-    color: rgb(178, 34, 34);
 }
 
 @media (max-width: calc(600px + 2rem)) {
@@ -75,6 +61,6 @@ a {
         margin-right: 1rem;
     }
     .album-textbox {
-        min-width: 200px;
+        min-width: 400px;
     }
 }
