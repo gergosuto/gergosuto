@@ -2,110 +2,110 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/nl/albums/</loc>
+    <loc>gergosuto.com/nl/albums/</loc>
     <lastmod>2026-03-16T00:00:01+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="en"
+                href="gergosuto.com/albums/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="hu"
-                href="//localhost:1313/hu/albums/"
+                href="gergosuto.com/hu/albums/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="//localhost:1313/nl/albums/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/albums/"
+                href="gergosuto.com/nl/albums/"
                 />
   </url><url>
-    <loc>//localhost:1313/nl/albums/over-mens-en-natuur/</loc>
+    <loc>gergosuto.com/nl/albums/over-mens-en-natuur/</loc>
     <lastmod>2026-03-16T00:00:01+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="hu"
-                href="//localhost:1313/hu/albums/emberekrol-es-termeszetrol/"
+                href="gergosuto.com/hu/albums/emberekrol-es-termeszetrol/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/albums/humans-and-nature/"
+                href="gergosuto.com/albums/humans-and-nature/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="//localhost:1313/nl/albums/over-mens-en-natuur/"
+                href="gergosuto.com/nl/albums/over-mens-en-natuur/"
                 />
   </url><url>
-    <loc>//localhost:1313/nl/</loc>
+    <loc>gergosuto.com/nl/</loc>
     <lastmod>2025-01-09T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/"
+                href="gergosuto.com/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hu"
-                href="//localhost:1313/hu/"
+                href="gergosuto.com/hu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="//localhost:1313/nl/"
+                href="gergosuto.com/nl/"
                 />
   </url><url>
-    <loc>//localhost:1313/nl/albums/wat-zie-je/</loc>
+    <loc>gergosuto.com/nl/albums/wat-zie-je/</loc>
     <lastmod>2015-01-07T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="hu"
-                href="//localhost:1313/hu/albums/te-mit-latsz/"
+                href="gergosuto.com/hu/albums/te-mit-latsz/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="//localhost:1313/nl/albums/wat-zie-je/"
+                href="gergosuto.com/nl/albums/wat-zie-je/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/albums/what-do-you-see/"
+                href="gergosuto.com/albums/what-do-you-see/"
                 />
   </url><url>
-    <loc>//localhost:1313/nl/categories/</loc>
+    <loc>gergosuto.com/nl/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/categories/"
+                href="gergosuto.com/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hu"
-                href="//localhost:1313/hu/categories/"
+                href="gergosuto.com/hu/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="//localhost:1313/nl/categories/"
+                href="gergosuto.com/nl/categories/"
                 />
   </url><url>
-    <loc>//localhost:1313/nl/tags/</loc>
+    <loc>gergosuto.com/nl/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/tags/"
+                href="gergosuto.com/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hu"
-                href="//localhost:1313/hu/tags/"
+                href="gergosuto.com/hu/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="//localhost:1313/nl/tags/"
+                href="gergosuto.com/nl/tags/"
                 />
   </url>
 </urlset>
