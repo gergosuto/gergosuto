@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+  Te mit látsz? &ndash; Gergő Sütő – Személyes weboldal
+</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="icon" type="image/x-icon" href="/favicon.png">
+    </head>
+    <body>
+        
+<nav class="album-navigation">
+    <a href='/hu/'>&#10005;</a>
+    <a href="/hu/albums/emberekrol-es-termeszetrol/">&larr;</a>
+    
+</nav>
+<div class="slideshow" id="slideshow">
+    
+    
+        <img src="/albums/what-do-you-see/images/1.jpeg"></img>
+        
+            <div class="album-textbox">
+                <h2>Te mit látsz?</h2>
+                
+            </div>
+            
+        
+    
+        <img src="/albums/what-do-you-see/images/2.jpeg"></img>
+        
+    
+        <img src="/albums/what-do-you-see/images/3.jpeg"></img>
+        
+    
+        <img src="/albums/what-do-you-see/images/4.jpeg"></img>
+        
+    
+        <img src="/albums/what-do-you-see/images/5.jpeg"></img>
+        
+    
+        <img src="/albums/what-do-you-see/images/6.jpeg"></img>
+        
+    
+        <img src="/albums/what-do-you-see/images/7.jpeg"></img>
+        
+    
+        <img src="/albums/what-do-you-see/images/8.jpeg"></img>
+        
+    
+        <img src="/albums/what-do-you-see/images/9.jpeg"></img>
+        
+    
+</div>
+<footer class="album-footer">
+    <small>
+        9 fotó
+    </small>
+</footer>
+<script>
+    const scroller = document.getElementById('slideshow');
+
+    scroller.addEventListener('wheel', (e) => {
+        
+        if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+        
+        e.preventDefault();
+        scroller.scrollLeft += e.deltaY;
+    }, { passive: false });
+</script>
+
+    </body>
+</html>

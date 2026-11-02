@@ -1,0 +1,5 @@
+<footer class="album-footer">
+    <small>
+        {{ len (.Resources.Match "images/*") }} photos{{ if page.Params.Footer }}, {{ page.Params.Footer }}{{ end }}
+    </small>
+</footer>

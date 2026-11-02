@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Albums on Gergő Sütő – Személyes weboldal</title>
+		<link>//localhost:1313/hu/albums/</link>
+		<description>Recent content in Albums on Gergő Sütő – Személyes weboldal</description>
+		<generator>Hugo</generator>
+		<language>hu</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 16 Mar 2026 00:00:01 +0100</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/hu/albums/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Emberekről és természetről</title>
+				<link>//localhost:1313/hu/albums/emberekrol-es-termeszetrol/</link>
+				<pubDate>Mon, 16 Mar 2026 00:00:01 +0100</pubDate>
+				<guid>//localhost:1313/hu/albums/emberekrol-es-termeszetrol/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Te mit látsz?</title>
+				<link>//localhost:1313/hu/albums/te-mit-latsz/</link>
+				<pubDate>Wed, 07 Jan 2015 00:00:00 +0100</pubDate>
+				<guid>//localhost:1313/hu/albums/te-mit-latsz/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

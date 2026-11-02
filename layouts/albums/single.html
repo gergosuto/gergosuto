@@ -4,29 +4,24 @@
 
 {{ define "main" }}
 <nav class="album-navigation">
-    <small>
-        <a href="/">Home Page</a> 
-        {{ with .NextInSection }}
-        · <a href="{{ .RelPermalink }}">Previous Album</a> 
-        {{ end }}
-        {{ with .PrevInSection }}
-        · <a href="{{ .RelPermalink }}">Next Album</a>
-        {{ end }}
-    </small>
+    <a href='{{ relLangURL "/"}}'>&#10005;</a>
+    {{ with .NextInSection }}<a href="{{ .RelPermalink }}">&larr;</a>{{ end }}
+    {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">&rarr;</a>{{ end }}
 </nav>
 <div class="slideshow" id="slideshow">
     {{ $i := 0 }}
-    {{ range .Resources.Match "images/*.jpeg" }}
+    {{ range .Resources.Match "images/*" }}
         <img src="{{ .RelPermalink }}"></img>
         {{ if eq $i 0 }}
             <div class="album-textbox">
                 <h2>{{ page.Title }}</h2>
-                <p>Lorem ipsum third</p>
+                {{ page.Content}}
             </div>
             {{ $i = 1 }}
         {{ end }}
     {{ end }}
 </div>
+{{ partial (printf "album-footer/%s.html" site.Language.Lang) . }}
 <script>
     const scroller = document.getElementById('slideshow');
 

@@ -1,0 +1,3 @@
+{{ range (where .Site.RegularPages "Section" "albums").ByDate }}
+    <div><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+{{ end }}

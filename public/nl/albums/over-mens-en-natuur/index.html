@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+  Over Mens en Natuur &ndash; Gergő Sütő – Persoonlijke website
+</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="icon" type="image/x-icon" href="/favicon.png">
+    </head>
+    <body>
+        
+<nav class="album-navigation">
+    <a href='/nl/'>&#10005;</a>
+    
+    <a href="/nl/albums/wat-zie-je/">&rarr;</a>
+</nav>
+<div class="slideshow" id="slideshow">
+    
+    
+        <img src="/albums/humans-and-nature/images/1-GS-20210824-0961.jpeg"></img>
+        
+            <div class="album-textbox">
+                <h2>Over Mens en Natuur</h2>
+                
+            </div>
+            
+        
+    
+        <img src="/albums/humans-and-nature/images/2-GS-20200710-7901.jpeg"></img>
+        
+    
+        <img src="/albums/humans-and-nature/images/3-GS-20220929-3843.jpeg"></img>
+        
+    
+        <img src="/albums/humans-and-nature/images/4-GS-20230329-1368.jpeg"></img>
+        
+    
+        <img src="/albums/humans-and-nature/images/5-GS-20230410-3216.jpeg"></img>
+        
+    
+</div>
+<footer class="album-footer">
+    <small>
+        5 foto's
+    </small>
+</footer>
+<script>
+    const scroller = document.getElementById('slideshow');
+
+    scroller.addEventListener('wheel', (e) => {
+        
+        if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+        
+        e.preventDefault();
+        scroller.scrollLeft += e.deltaY;
+    }, { passive: false });
+</script>
+
+    </body>
+</html>

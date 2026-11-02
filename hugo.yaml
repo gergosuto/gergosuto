@@ -1,3 +1,18 @@
 baseURL: gergosuto.com
-languageCode: en-us
-title: Gergő Sütő – Personal Website
+languages:
+  en:
+    label: English
+    locale: en
+    title: Gergő Sütő – Personal Website
+  hu:
+    label: Magyar
+    locale: hu
+    title: Gergő Sütő – Személyes weboldal
+  nl:
+    label: Nederlands
+    locale: nl
+    title: Gergő Sütő – Persoonlijke website
+# markup:
+#   goldmark:
+#     renderer:
+#       unsafe: true # Enabled to allow HTML in Markdown

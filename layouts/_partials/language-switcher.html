@@ -1,0 +1,22 @@
+{{ $lang := .Language.Lang }}
+<nav class="lang-switcher" aria-label="Language">
+    <small>
+    {{ if eq $lang "en" }}
+    🇬🇧 <span aria-current="true">English</span>&nbsp;&nbsp;
+    {{ else }}
+    🇬🇧 <a href="/" lang="en" hreflang="en">English</a>&nbsp;&nbsp;
+    {{ end }}
+    
+    {{ if eq $lang "hu" }}
+    🇭🇺 <span aria-current="true">Magyar</span>&nbsp;&nbsp;
+    {{ else }}
+    🇭🇺 <a href="/hu/" lang="hu" hreflang="hu">Magyar</a>&nbsp;&nbsp;
+    {{ end }}
+    
+    {{ if eq $lang "nl" }}
+    🇳🇱 <span aria-current="true">Nederlands</span>
+    {{ else }}
+    🇳🇱 <a href="/nl/" lang="nl" hreflang="nl">Nederlands</a>
+    {{ end }}
+    </small>
+</nav>
