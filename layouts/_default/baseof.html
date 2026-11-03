@@ -9,6 +9,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content='{{ cond (eq .Section "albums") "#222" "#FAF9F5" }}'>
         <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
         <link rel="stylesheet" href="/style.css">
         <link rel="icon" type="image/x-icon" href="/favicon.png">

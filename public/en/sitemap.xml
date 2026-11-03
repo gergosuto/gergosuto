@@ -103,6 +103,11 @@
     <loc>gergosuto.com/tags/</loc>
     <xhtml:link
                 rel="alternate"
+                hreflang="en"
+                href="gergosuto.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="hu"
                 href="gergosuto.com/hu/tags/"
                 />
@@ -110,11 +115,6 @@
                 rel="alternate"
                 hreflang="nl"
                 href="gergosuto.com/nl/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="gergosuto.com/tags/"
                 />
   </url>
 </urlset>
