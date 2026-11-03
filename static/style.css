@@ -7,15 +7,10 @@ body {
     line-height: 1.5;
     color: rgb(62, 62, 62);
     font-family: sans-serif;
-    background: radial-gradient(ellipse at center,#0000 45%,#e3e1db 100%) fixed,#FAF9F5; /* Anthropic bg color */
-    background-size: 120% 110%; /* Width 120% */
-    background-position-x: center;
-    /* background-image: radial-gradient(circle at 23% 31%,#8c8c8c 0 1px,#0000 1.6px),radial-gradient(circle at 71% 62%,#939393 0 1.2px,#0000 1.8px),radial-gradient(circle at 47% 83%,#999 0 .4px,#0000 .9px),radial-gradient(circle at 88% 14%,#909090 0 1.5px,#0000 2.1px),radial-gradient(circle at 12% 74%,#969696 0 .45px,#0000 .95px),radial-gradient(circle at 55% 9%,#9c9c9c 0 1px,#0000 1.6px),radial-gradient(circle at 33% 52%,#8c8c8c 0 .35px,#0000 .85px),radial-gradient(circle at 79% 38%,#939393 0 1.1px,#0000 1.7px),radial-gradient(circle at 64% 91%,#999 0 .4px,#0000 .9px),radial-gradient(circle at 5% 15%,#909090 0 .5px,#0000 1.0px),radial-gradient(circle at 640px 310px,#969696 0 1.4px,#0000 2px),radial-gradient(circle at 655px 322px,#9c9c9c 0 1px,#0000 1.6px),radial-gradient(circle at 628px 326px,#8c8c8c 0 .4px,#0000 .9px),radial-gradient(circle at 668px 303px,#939393 0 .35px,#0000 .85px),radial-gradient(circle at 645px 338px,#999 0 1.1px,#0000 1.7px),radial-gradient(circle at 210px 760px,#909090 0 1.3px,#0000 1.9px),radial-gradient(circle at 226px 771px,#969696 0 .45px,#0000 .95px),radial-gradient(circle at 198px 775px,#9c9c9c 0 .4px,#0000 .9px),radial-gradient(circle at 234px 752px,#8c8c8c 0 .8px,#0000 1.4px);background-size:311px 277px,421px 389px,509px 463px,613px 571px,701px 647px,227px 241px,349px 331px,457px 503px,557px 619px,811px 757px,1013px 941px,1013px 941px,1013px 941px,1013px 941px,1013px 941px,1171px 1087px,1171px 1087px,1171px 1087px,1171px 1087px; */
 }
 a {
     color: rgb(186, 51, 51);
     text-underline-position: under;
-    text-decoration-thickness: 1pt;
 }
 
 /* Home page */
@@ -59,20 +54,17 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: radial-gradient(ellipse at center,#0000 45%,#111 100%) fixed,#333;
-    background-size: 150% 110%; /* Width 150% */
-    background-position-x: center;
     overflow: scroll;
     scrollbar-width: none;
 }
 .slideshow img {
     max-width: 120vw;
-    max-height: 65vh;
+    max-height: 65dvh;
     margin: 0 .7rem;
 }
 .album-textbox {
     min-width: 600px;
-    height: 65vh;
+    height: 65dvh;
     margin: 0 50px;
     display: flex;
     flex-direction: column;

@@ -11,13 +11,13 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="hu"
-                href="gergosuto.com/hu/albums/"
+                hreflang="nl"
+                href="gergosuto.com/nl/albums/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
-                href="gergosuto.com/nl/albums/"
+                hreflang="hu"
+                href="gergosuto.com/hu/albums/"
                 />
   </url><url>
     <loc>gergosuto.com/albums/humans-and-nature/</loc>
@@ -86,11 +86,6 @@
     <loc>gergosuto.com/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="gergosuto.com/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="hu"
                 href="gergosuto.com/hu/categories/"
                 />
@@ -98,6 +93,11 @@
                 rel="alternate"
                 hreflang="nl"
                 href="gergosuto.com/nl/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="gergosuto.com/categories/"
                 />
   </url><url>
     <loc>gergosuto.com/tags/</loc>
